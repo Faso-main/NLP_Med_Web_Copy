@@ -1,0 +1,24 @@
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.isbold p {
+    font-weight: bold;
+}
+
+.line p {
+    margin: 0;
+}
+
+.line > .name {
+    flex: 0 50%;
+}
+
+.line > .value {
+    display: flex;
+    justify-content: end;
+    flex: 1 50%;
+    text-align: end;
+}

@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+transformers
+torch
+spacy
+pydantic
+pydantic-settings
+sentencepiece

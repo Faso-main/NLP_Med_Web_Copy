@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+*.log
+
+/backend/models/*
+
+!/backend/models/label2id.json
+
