@@ -8,7 +8,7 @@
 
 1.  **Скачивание моделей:**
     * Перейдите по ссылке: [https://drive.google.com/drive/folders/1W-tOgfxZ8N5_YNSdP-xeMFYLUW0sXxXT?usp=sharing](https://drive.google.com/drive/folders/1W-tOgfxZ8N5_YNSdP-xeMFYLUW0sXxXT?usp=sharing)
-    * Скачайте все файлы из этой папки.
+    * Скачайте все файлы из этой папки в папку с соответствующим названием.
     * Переместите скачанные файлы в директорию `backend/models` вашего проекта.
 
 2.  **Установка зависимостей бэкенда:**
