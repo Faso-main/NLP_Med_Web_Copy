@@ -7,7 +7,7 @@
 Следуйте этим шагам для установки и запуска проекта:
 
 1.  **Скачивание моделей:**
-    * Перейдите по ссылке: [https://drive.google.com/drive/folders/10FNP0BuMxYCtHifvvxICgB1l60ZwjXff?usp=sharing](https://drive.google.com/drive/drive/folders/10FNP0BuMxYCtHifvvxICgB1l60ZwjXff?usp=sharing)
+    * Перейдите по ссылке: [https://drive.google.com/drive/folders/1W-tOgfxZ8N5_YNSdP-xeMFYLUW0sXxXT?usp=sharing](https://drive.google.com/drive/folders/1W-tOgfxZ8N5_YNSdP-xeMFYLUW0sXxXT?usp=sharing)
     * Скачайте все файлы из этой папки.
     * Переместите скачанные файлы в директорию `backend/models` вашего проекта.
 
