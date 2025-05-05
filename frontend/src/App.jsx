@@ -1,11 +1,11 @@
 import React, { useState, useRef } from 'react';
-import FileDropzone from "components/FileDropzone"
-import Loader from "components/Loader"
-import Line from "components/Line"
-import useSendPredict from "hooks/useSendPredict"
+import FileDropzone from "components/FileDropzone";
+import Loader from "components/Loader";
+import Line from "components/Line";
+import useSendPredict from "hooks/useSendPredict";
 
 import 'css/App.css';
-import "css/MainPage.css"
+import "css/MainPage.css";
 
 function App() {
   const [text, setText] = useState('');
@@ -41,7 +41,7 @@ function App() {
   return (
     <div className="app-container">
       <div className="title-container">
-        <h1>EDSS Калькулятор</h1>
+        <h1>Калькулятор шкалы EDSS</h1>
         <button onClick={handleButtonClick}>Загрузить</button>
         <input
           type="file"
@@ -64,8 +64,20 @@ function App() {
             </div>
           ) : (
             <div className="response-content">
-              <Line name="Итоговый EDSS" value={responseData.edss_score} isBoldName={true} />
-              {Object.entries(responseData.scores).map(([k, v]) => <Line name={k} value={v} />)}
+              {responseData ? (
+                <>
+                  <Line 
+                    name="Итоговый EDSS" 
+                    value={responseData.edss_score ?? "Нет данных"} 
+                    isBoldName={true} 
+                  />
+                  {responseData.scores && Object.entries(responseData.scores).map(([k, v]) => (
+                    <Line key={k} name={k} value={v} />
+                  ))}
+                </>
+              ) : (
+                <p>Нет данных для отображения</p>
+              )}
             </div>
           )}
         </div>
